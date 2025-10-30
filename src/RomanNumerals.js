@@ -1,12 +1,12 @@
 class RomanNumerals {
   toRoman(number) {
-    let result = "";
+    let roman = "";
 
-    for (let i = 0; i < number; i++) {
-      result += "I";
+    for (let count = 0; count < number; count++) {
+      roman += "I";
     }
 
-    return result;
+    return roman;
   }
 }
 
