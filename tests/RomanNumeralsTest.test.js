@@ -22,4 +22,18 @@ describe("RomanNumeralsTest", () => {
   test("converts 9 to IX", () => {
     expect(romanNumerals.toRoman(9)).toBe("IX");
   });
+
+  // Tests for complex validation scenarios
+
+  test("converts 58 to LVIII", () => {
+    expect(romanNumerals.toRoman(58)).toBe("LVIII");
+  });
+
+  test("converts 1994 to MCMXCIV", () => {
+    expect(romanNumerals.toRoman(1994)).toBe("MCMXCIV");
+  });
+
+  test("converts 3999 to MMMCMXCIX", () => {
+    expect(romanNumerals.toRoman(3999)).toBe("MMMCMXCIX");
+  });
 });
