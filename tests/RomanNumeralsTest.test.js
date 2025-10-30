@@ -13,4 +13,13 @@ describe("RomanNumeralsTest", () => {
   test("converts 3 to III", () => {
     expect(romanNumerals.toRoman(3)).toBe("III");
   });
+
+  // Tests for the subtractive logic
+  test("converts 4 to IV", () => {
+    expect(romanNumerals.toRoman(4)).toBe("IV");
+  });
+
+  test("converts 9 to IX", () => {
+    expect(romanNumerals.toRoman(9)).toBe("IX");
+  });
 });
